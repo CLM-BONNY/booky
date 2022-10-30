@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login" >
+
+    <TextView
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="📚Booky📚"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textColor="#0062cd"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/app"
+        android:layout_centerInParent="true"
+        android:hint="ID" />
+
+    <EditText
+        android:id="@+id/PW"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ID"
+        android:layout_centerInParent="true"
+        android:hint="PASSWORD"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Login_btn"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/PW"
+        android:layout_centerInParent="true"
+        android:text="로그인"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#0062cd" />
+
+    <Button
+        android:id="@+id/Signup_btn"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Login_btn"
+        android:layout_centerInParent="true"
+        android:text="회원가입"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#0062cd" />
+
+    <Button
+        android:id="@+id/Goods_btn"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/Signup_btn"
+        android:layout_centerInParent="true"
+        android:text="상품 보러가기"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#5ABEF5" />
+
+</RelativeLayout>
