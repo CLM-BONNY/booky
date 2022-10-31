@@ -5,12 +5,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signup" >
+    tools:context=".SignUp" >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:text="📜Sign Up📜"
         android:textSize="45sp"
         android:textAlignment="center"
@@ -21,14 +20,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="10dp">
 
         <EditText
             android:id="@+id/signup_ID"
             android:layout_width="210dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
-            android:hint="아이디를 입력하세요" />
+            android:hint="아이디를 입력하세요"
+            android:inputType="text"/>
         <Button
             android:id="@+id/ID_check_btn"
             android:layout_width="170dp"
@@ -48,9 +48,10 @@
         <EditText
             android:id="@+id/signup_PW"
             android:layout_width="210dp"
-            android:layout_height="70dp"
+            android:layout_height="100dp"
             android:layout_marginLeft="10dp"
-            android:hint="비밀번호를 입력하세요" />
+            android:hint="비밀번호(8자리, 특수문자\n(!,@, # 중 1개 이상 포함)를 \n입력하세요"
+            android:inputType="text" />
         <Button
             android:id="@+id/PW_check_btn"
             android:layout_width="170dp"
@@ -69,7 +70,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:hint="이름을 입력하세요" />
+        android:hint="이름을 입력하세요"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/signup_phone"
@@ -88,7 +90,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:hint="주소를 입력하세요" />
+        android:hint="주소를 입력하세요"
+        android:inputType="text" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -105,8 +108,8 @@
                 android:id="@+id/signup_terms"
                 android:layout_width="210dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="3dp"
                 android:text="*개인 정보 이용 동의"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -124,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="1dp"
                     android:text="동의"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -134,14 +137,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="7dp"
+                    android:layout_marginTop="1dp"
                     android:layout_marginRight="10dp"
                     android:text="거절"
                     android:textSize="16sp"
                     android:textStyle="bold" />
             </RadioGroup>
         </LinearLayout>
-
     </LinearLayout>
 
     <TextView
@@ -149,28 +151,24 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
         android:layout_marginRight="10dp"
         android:scrollbars="vertical"
-        android:text="개인정보 수집 및 이용 동의\n
+        android:text="-개인정보 수집 및 이용 동의-\n
 주식회사 만두컴퍼니(이하 “회사” 또는 서비스명인 “Booky”라 함)는 이용자의 개인정보보호를 매우 중요시하며, 『개인정보보호법』, 『정보통신망이용촉진 및 정보보호에 관한 법률』 등 개인정보보호규정 및 정보통신부가 제정한 『개인정보보호지침』을 준수하고 있습니다.
 회사는 원활한 서비스 제공을 위해 이용자로부터 아래와 같이 개인정보 수집 및 이용동의를 받고자합니다. 내용을 자세히 읽으신 후 동의하시면 원래 화면으로 돌아가 해당 화면의 안내에 따라 버튼을 눌러 주시기 바랍니다. 자세한 내용은 회사의 개인정보처리방침을 참조하여 주시기 바랍니다.\n
-※ 개인정보 수집 및 이용 내역\n
-개인정보 수집 항목\n
+-개인정보 수집 항목-\n
 전화번호, 이름, 주소\n
-개인정보의 이용 및 보유시간\n
+-개인정보의 이용 및 보유시간-\n
 회원 탈퇴 시까지 (관련 법령에 따라 보존할 필요가 있는 경우는 해당 보존 기간)\n
-※ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익\n
+-동의를 거부할 권리 및 동의를 거부할 경우의 불이익-\n
 ‍위의 개인정보 수집 및 이용에 대한 동의를 거부할 권리가 있으나 동의를 거부할 경우 ‘Booky’ 서비스 제공에 제한 등 불이익을 받을 수 있습니다."
-        android:textAlignment="center"
         android:textStyle="bold"
         android:visibility="invisible" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:orientation="horizontal" >
 
         <Button
             android:id="@+id/signup_check_btn"
