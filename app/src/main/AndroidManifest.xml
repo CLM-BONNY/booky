@@ -27,6 +27,9 @@
         </activity>
         <activity android:name=".SignUp"></activity>
         <activity android:name=".Goods"></activity>
+        <activity
+            android:name=".PopUp">
+        </activity>
     </application>
 
 </manifest>
