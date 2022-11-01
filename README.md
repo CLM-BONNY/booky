@@ -2,20 +2,24 @@
 소프트웨어학부 20203035 김민선
 <hr />
 
-### 목차
+## 목차
 - 실행 환경 및 개발 환경
 - 구현 내용
+<hr />
 
-### 실행 환경 및 개발 환경
+## 실행 환경 및 개발 환경
 - 실행 환경
   - Android Virtual Device (AVD): Pixel 2 API 31 (Android 12)
   - 내부저장소 접근
 - 개발 환경
   - IDE: Android Studio 11.0.13
   - SDK: API 32 (Android 12)
+<hr />
 
-### 구현 내용
-- 로그인 화면(activity_login)
+## 구현 내용
+### 로그인 화면(activity_login)
+<img width="248" alt="스크린샷 2022-11-01 오후 7 03 05" src="https://user-images.githubusercontent.com/66056874/199218133-7e0f8cef-89bc-4df7-9d6e-6e918ad1e875.png">
+
   - 로그인 버튼
     - EditText에 텍스트가 입력되었는지, 입력한 아이디와 일치하는 파일명이 내부 저장소에 존재하는지, 해당 파일(입력한 아이디와 일치하는 파일명을 가진 파일) 내용에 존재하는 비밀번호인지 확인한다.
     - 위의 조건에 만족하지 않을 경우, 각각의 에러 메시지를 Toast로 출력한다.
@@ -24,8 +28,11 @@
     - 회원가입 화면(activity_signup)으로 이동한다.
   - 상품보러가기 버튼
     - 상품 화면(activity_goods)으로 이동한다.
+<hr />
 
-- 회원가입 화면(activity_signup)
+### 회원가입 화면(activity_signup)
+<img width="248" alt="스크린샷 2022-11-01 오후 7 03 21" src="https://user-images.githubusercontent.com/66056874/199218301-38585ac1-e770-4469-8d0d-dfd28038016c.png">
+
   - 아이디
     - 중복 확인 버튼
       - 입력한 아이디와 일치하는 파일명이 내부 저장소에 존재하는지 확인한다.
@@ -49,8 +56,12 @@
     - 위의 조건에 모두 만족할 경우, 아이디를 파일명으로 하는 txt파일을 생성, 회원정보(아이디, 비밀번호, 이름, 전화번호, 주소)를 해당 파일에 저장한 후, 회원 가입 완료 메시지를 Toast로 출력하고 로그인 페이지로 이동한다.
   - 뒤로가기 버튼
     - 로그인 화면(activity_login)으로 이동한다.
+<hr />
 
-- 상품 화면(activity_goods)
+### 상품 화면(activity_goods)
+<img width="247" alt="스크린샷 2022-11-01 오후 7 03 45" src="https://user-images.githubusercontent.com/66056874/199218523-3f2f19fa-474c-42bc-bd66-b169c661c97f.png">
+<img width="248" alt="스크린샷 2022-11-01 오후 7 04 08" src="https://user-images.githubusercontent.com/66056874/199218537-28df57fb-c465-4fca-b03c-72d3515b8522.png">
+
   - 상품(책) 목록
     - 좌측에 상품(책)의 이미지, 우측의 도서명, 작가명, 출판사명이 위치한다.
     - 테두리는 별도의 xml파일에 정의되어있다.
