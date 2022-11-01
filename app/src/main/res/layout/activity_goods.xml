@@ -168,30 +168,30 @@
                     android:id="@+id/add_item_btn"
                     android:layout_width="110dp"
                     android:layout_height="50dp"
-                    android:backgroundTint="#5ABEF5"
                     android:text="상품 추가"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:backgroundTint="#5ABEF5" />
 
                 <Button
                     android:id="@+id/del_item_btn"
                     android:layout_width="110dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
-                    android:backgroundTint="#5ABEF5"
                     android:text="상품 삭제"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:backgroundTint="#5ABEF5" />
 
                 <Button
                     android:id="@+id/user_info_btn"
                     android:layout_width="140dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="10dp"
-                    android:backgroundTint="#0062cd"
                     android:text="유저 정보 확인"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:backgroundTint="#0062cd" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
