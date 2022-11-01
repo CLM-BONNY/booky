@@ -59,8 +59,10 @@
 <hr />
 
 ### 상품 화면(activity_goods)
+<div>
 <img width="247" alt="스크린샷 2022-11-01 오후 7 03 45" src="https://user-images.githubusercontent.com/66056874/199218523-3f2f19fa-474c-42bc-bd66-b169c661c97f.png">
 <img width="248" alt="스크린샷 2022-11-01 오후 7 04 08" src="https://user-images.githubusercontent.com/66056874/199218537-28df57fb-c465-4fca-b03c-72d3515b8522.png">
+</div>
 
   - 상품(책) 목록
     - 좌측에 상품(책)의 이미지, 우측의 도서명, 작가명, 출판사명이 위치한다.
